@@ -8,7 +8,7 @@ This proof-of-concept random map generator for Left 4 Dead 2 (and other Hammer b
 """
 
 random.seed(20) # This random seed affects the selection of tiles and connections. A change leads to a completely different map layout.
-NUMBER_OF_TILES = random.randint(16) # How many tiles there should be in the map.
+NUMBER_OF_TILES = 18 # How many tiles there should be in the map.
 TAIL_LENGTH = 3 # The number of portals considered to be the tail of the map. Greater values produce more dead ends.
 
 def chooseConection(connections):
