@@ -11,18 +11,6 @@ random.seed(20) # This random seed affects the selection of tiles and connection
 NUMBER_OF_TILES = 18 # How many tiles there should be in the map.
 TAIL_LENGTH = 3 # The number of portals considered to be the tail of the map. Greater values produce more dead ends.
 
-def chooseConection(connections):
-  """Choses a random connection out of the given ones"""
-  if len(connections) > 0:
-    direction = random.choice(connections)
-    portal = random.choice(direction[1])
-    otherPortal = random.choice(direction[2])
-    connection = (direction[0],portal,otherPortal)
-    print "Chose connection",connection
-    return connection
-  else:
-    return None
-
 def collide(box, blockingBoxes):
   """Checks whether two bounding boxes collide"""
   for blockingBox in blockingBoxes:
