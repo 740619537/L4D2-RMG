@@ -122,3 +122,8 @@ if __name__ == "__main__":
   file = open("../../../left4dead2/cfg/combined.cfg","w")
   file.write(base.generateNavMeshScript())
   file.close()
+  
+  
+"""
+这是测试222222
+"""
